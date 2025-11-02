@@ -1,37 +1,32 @@
-import { defineRouter } from '#q-app/wrappers';
-import {
-  createMemoryHistory,
-  createRouter,
-  createWebHashHistory,
-  createWebHistory,
-} from 'vue-router';
-import routes from './routes';
+import { route } from 'quasar/wrappers'
+import { createRouter, createWebHistory } from 'vue-router'
+import routes from './routes'
+import { useAuthStore } from 'stores/auth'
 
-/*
- * If not building with SSR mode, you can
- * directly export the Router instantiation;
- *
- * The function below can be async too; either use
- * async/await or return a Promise which resolves
- * with the Router instance.
- */
-
-export default defineRouter(function (/* { store, ssrContext } */) {
-  const createHistory = process.env.SERVER
-    ? createMemoryHistory
-    : process.env.VUE_ROUTER_MODE === 'history'
-      ? createWebHistory
-      : createWebHashHistory;
-
-  const Router = createRouter({
-    scrollBehavior: () => ({ left: 0, top: 0 }),
+export default route(function () {
+  const router = createRouter({
+    history: createWebHistory(process.env.BASE_URL),
     routes,
+  })
 
-    // Leave this as is and make changes in quasar.conf.js instead!
-    // quasar.conf.js -> build -> vueRouterMode
-    // quasar.conf.js -> build -> publicPath
-    history: createHistory(process.env.VUE_ROUTER_BASE),
-  });
+  router.beforeEach((to) => {
+    const auth = useAuthStore()
 
-  return Router;
-});
+    if (!auth.isAuthenticated && to.path !== '/login') {
+      return '/login'
+    }
+    if (auth.isAuthenticated && to.path === '/login') {
+      return '/'
+    }
+
+    const requiredRole = to.meta?.role as string | undefined
+    if (requiredRole && auth.user?.role !== requiredRole) {
+      // Optional: redirect unauthorized users to dashboard or 403 page
+      return '/403'
+    }
+    
+    return true
+  })
+
+  return router
+})

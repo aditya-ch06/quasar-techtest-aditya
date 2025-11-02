@@ -1,0 +1,50 @@
+[
+  {
+    "id": 101,
+    "name": "Outlet Kebayoran Lama",
+    "location": "Jakarta",
+    "userId": 2,
+    "total": 2,
+    "status": "Active"
+  },
+  {
+    "id": 102,
+    "name": "Outlet Jalan Palagan",
+    "location": "Yogyakarta",
+    "userId": 4,
+    "total": 0,
+    "status": "Inactive"
+  },
+  {
+    "id": 103,
+    "name": "Outlet Tunjungan Plaza",
+    "location": "Surabaya",
+    "userId": 3,
+    "total": 3,
+    "status": "Active"
+  },
+  {
+    "id": 104,
+    "name": "Outlet Jogja City Mall",
+    "location": "Yogyakarta",
+    "userId": 3,
+    "total": 1,
+    "status": "Active"
+  },
+  {
+    "id": 105,
+    "name": "Outlet Babarsari",
+    "location": "Yogyakarta",
+    "userId": 3,
+    "total": 0,
+    "status": "Inactive"
+  },
+  {
+    "id": 106,
+    "name": "Outlet Sleman City Hall",
+    "location": "Yogyakarta",
+    "userId": 3,
+    "total": 0,
+    "status": "Inactive"
+  }
+]
