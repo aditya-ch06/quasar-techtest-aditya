@@ -60,6 +60,7 @@ See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-
 
 ### 2. **Folder Structure**
 
+```
 src/
 ├── assets/ # Static assets (images, icons)
 ├── components/ # Reusable UI components (e.g., Sidebar, Navbar, Widgets)
@@ -71,6 +72,7 @@ src/
 ├── utils/ # Helper functions (mock API, data grouping)
 ├── css/ # Global and Quasar SCSS variables
 └── main.ts # App entry point
+```
 
 This modular structure ensures **clear separation of concerns**:
 
