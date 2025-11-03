@@ -137,14 +137,20 @@ DEMO: https://resilient-praline-00baac.netlify.app/
 
 SCREENSHOT:
 
-![Admin Dashboard Screenshot](src/assets/screenshot/admin%20-%20home.png)
+- **Dashboard Screenshot**
+  Admin
+  ![Admin Dashboard Screenshot](src/assets/screenshot/admin%20-%20home.png)
+  User
+  ![User Dashboard Screenshot](src/assets/screenshot/user%20home.png)
 
-![User Dashboard Screenshot](src/assets/screenshot/user%20home.png)
+- **Outlets Screenshot**
+  Admin
+  ![Admin Outlets Screenshot](src/assets/screenshot/admin%20-%20outlets.png)
+  User
+  ![User Outlets Screenshot](src/assets/screenshot/user%20-%20outlets.png)
 
-![Admin Outlets Screenshot](src/assets/screenshot/admin%20-%20outlets.png)
-
-![User Outlets Screenshot](src/assets/screenshot/user%20-%20outlets.png)
-
-![Admin Outlets Detail Screenshot](src/assets/screenshot/admin%20-%20outlet%20detail.png)
-
-![User Outlets Detail Screenshot](src/assets/screenshot/user%20-%20outlet%20detail.png)
+- **Outlets Detail Screenshot**
+  Admin
+  ![Admin Outlets Detail Screenshot](src/assets/screenshot/admin%20-%20outlet%20detail.png)
+  User
+  ![User Outlets Detail Screenshot](src/assets/screenshot/user%20-%20outlet%20detail.png)
