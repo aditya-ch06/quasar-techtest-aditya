@@ -101,7 +101,7 @@ Role guards are implemented in the **router** and **store**, ensuring that:
 ### 4. **Authentication & Persistence**
 
 User login is validated against `users.json` (mock data).  
-The authenticated session is stored in **`sessionStorage`**, allowing persistence across reloads but automatically cleared when the session ends.
+The authenticated session is stored in **`localStorage`**, allowing persistence across reloads but automatically cleared when the session ends.
 
 ---
 
@@ -109,7 +109,9 @@ The authenticated session is stored in **`sessionStorage`**, allowing persistenc
 
 Mock data (e.g., `users.json`, `outlets.json`, `orders.json`) is located under:
 
+```ts
 public/data/
+```
 
 Data fetching uses `fetch()` with relative URLs to simulate REST APIs.  
 Each mock module (e.g., outlets, orders) provides functions like:
@@ -132,3 +134,17 @@ Example:
 ```
 
 DEMO: https://resilient-praline-00baac.netlify.app/
+
+SCREENSHOT:
+
+![Admin Dashboard Screenshot](src/assets/screenshot/admin%20-%20home.png)
+
+![User Dashboard Screenshot](src/assets/screenshot/user%20home.png)
+
+![Admin Outlets Screenshot](src/assets/screenshot/admin%20-%20outlets.png)
+
+![User Outlets Screenshot](src/assets/screenshot/user%20-%20outlets.png)
+
+![Admin Outlets Detail Screenshot](src/assets/screenshot/admin%20-%20outlet%20detail.png)
+
+![User Outlets Detail Screenshot](src/assets/screenshot/user%20-%20outlet%20detail.png)
