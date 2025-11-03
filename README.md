@@ -114,6 +114,7 @@ Each mock module (e.g., outlets, orders) provides functions like:
 
 ```ts
 export async function fetchOutlets(): Promise<Outlet[]> { ... }
+```
 
 ---
 
@@ -124,7 +125,8 @@ Data is dynamically aggregated using helper utilities that group outlets by thei
 
 Example:
 
+```ts
 { "Yogyakarta": 4, "Surabaya": 3, "Jakarta": 2 }
-
-⚙️ Development Commands
 ```
+
+DEMO: https://resilient-praline-00baac.netlify.app/
