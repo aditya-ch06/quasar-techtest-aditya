@@ -77,14 +77,14 @@ async function logout() {
 <style scoped>
 .user-info {
   text-align: left;
-  gap: 0.5rem; /* Adds spacing between children (avatar and text block) */
+  gap: 0.5rem;
 }
 
 .user-text {
   display: flex;
   flex-direction: column;
   align-items: left;
-  gap: 0.25rem; /* Adds space between name and ID */
+  gap: 0.25rem;
 }
 
 </style>
